@@ -1,0 +1,269 @@
+/* 모든 페이지 공통 */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, "맑은 고딕", sans-serif;
+    background-color: white;
+    color: #263f56;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 5%;
+    gap: 20px;
+    background-color: white;
+    border-bottom: 1px solid #dce7ef;
+}
+
+.logo {
+    font-size: 20px;
+    color: #075b9b;
+    font-weight: bold;
+}
+
+nav a {
+    font-size: 15px;
+    font-weight: bold;
+    color: #304e68;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+nav a:hover {
+    color: #0879d1;
+}
+
+.header-icons {
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+}
+
+/* 메인 배너 디자인 */
+.banner {
+    min-height: 300px;
+    padding: 35px 8%;
+    background-color: #eaf5ff;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.banner .small-title {
+    font-size: 12px;
+    font-weight: bold;
+    color: #0879d1;
+}
+
+.banner h1 {
+    font-size: 34px;
+    color: #103e69;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.banner h1 span {
+    color: #0879d1;
+}
+
+.banner p {
+    color: #5c7286;
+}
+
+.banner img {
+    width: 40%;
+    height: 230px;
+    object-fit: cover; /* 부모 태그 크기에 맞게 이미지 맞춤 -> 가로 세로 비율 유지, 지정 크기보다 큰 부분은 잘려나감, 썸네일 필수*/
+    border-radius: 8px;
+}
+
+/* 공통 버튼 디자인 */
+.button {
+    display: inline-block;
+    background-color: #0879d1;
+    color: white;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.button:hover {
+    background-color: #075b9b;
+}
+
+/* 버튼 색깔 */
+.green-button {
+    background-color: #159765;
+}
+
+.gray-button {
+    background-color: #718493;
+}
+
+.red-button {
+    background-color: #e34d59;
+}
+
+/* content 공통 속성 */
+.content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.content .section-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content h2 {
+    font-size: 20px;
+    color: #103e69;
+}
+
+.banner .section-head a {
+    font-size: 13px;
+    color: #0879d1;
+}
+
+/* 상품 리스트 디자인 */
+.product-list {
+    display: flex;
+    gap: 15px;
+}
+
+.product-card {
+    border: 1px solid #dce7ef;
+    border-radius: 5px;
+    flex: 1;
+    background-color: white;
+}
+
+.product-card img {
+    display: block;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    background-color: #edf5fa;
+}
+
+.product-info {
+    padding: 10px;
+}
+
+.product-info h3 {
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.product-info .price {
+    font-weight: bold;
+    color: #0879d1;
+    margin-top: 0;
+}
+
+/* 서비스 리스트 디자인 */
+.service-list {
+    display: flex;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 15px;
+    background-color: #f0f7fc;
+    border-radius: 5px;
+}
+
+.service-list div {
+    flex: 1;
+    text-align: center;
+}
+
+.service-list span {
+    display: block;
+    font-size: 25px;
+}
+
+.service-list b {
+    color: #075b9b;
+}
+
+.service-list p {
+    font-size: 12px;
+    color: #687d8e;
+    margin-top: 3px;
+}
+
+/* 공지사항과 브랜드 */
+.bottom-content {
+    display: flex;
+    gap: 30px;
+}
+
+.bottom-content div {
+    flex: 1;
+}
+
+.bottom-content .notice-list {
+    list-style: none;
+    padding: 0; /* 말머리기호 때문에 생성된 공백 제거 */
+    border-top: 1px solid #dce7ef;
+}
+
+.notice-list li {
+    border-bottom: 1px solid #dce7ef;
+    padding: 10px;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.notice-list span {
+    font-size: 12px;
+    color: #718493;
+}
+
+.brand-list {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap; /* 자동 줄바꿈 */
+}
+
+.brand-list span {
+    border: 1px solid #dce7ef;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #425a70;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 32%;
+    text-align: center;
+}
+
+/* 공통 하단 영역 */
+footer {
+    background-color: #123f67;
+    text-align: center;
+    color: white;
+    padding: 25px 15px;
+    font-size: 13px;
+    margin-top: 25px;
+}
+
+footer small {
+    color: #c8d9e7;
+}
